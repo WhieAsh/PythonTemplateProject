@@ -1,0 +1,28 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+fastapi = "*"
+pydantic = "*"
+aiohttp = "*"
+requests = "*"
+databases = {extras = ["postgresql"], version = "*"}
+uvicorn = "*"
+sqlalchemy = "*"
+psycopg2-binary = "*"
+
+[dev-packages]
+pytest = "*"
+mypy = "*"
+pytest-asyncio = "*"
+asyncio = "*"
+httpx = "*"
+responses = "*"
+aioresponses = "*"
+alembic = "*"
+mock = "*"
+
+[requires]
+python_version = "3.11"
